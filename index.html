@@ -1,4 +1,4 @@
-<!doctype html>
+ <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -1271,7 +1271,7 @@
         otherProjectCards.forEach((card, index) => {
           card.addEventListener('click', (e) => {
             // Check if click was inside a link; if so, let the link work normally
-            // if (e.target.closest('a')) return;
+            if (e.target.closest('a')) return;
         
             // Otherwise, open modal
             modalImg.src = projectImages[index];
